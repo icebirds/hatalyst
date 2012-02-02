@@ -1,4 +1,0 @@
-cpp
-haxe_207
-true
-/home/icebird/haxelib/hxcpp/2,07,0/
