@@ -1,0 +1,8 @@
+\setcounter{page}{1}
+\part{基础篇}
+\input{part1/chapter1}
+\input{part1/chapter2}
+\input{part1/chapter3}
+
+\newpage
+\thispagestyle{empty}

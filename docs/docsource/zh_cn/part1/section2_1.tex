@@ -1,0 +1,80 @@
+\section{万能的Hello World}
+
+许多的编程书籍或者教程，都把这个没什么大用的Hello world作为第一课。我觉得这是一个很有趣的事情，我们的第一课，就是这个万能的Hello world程序。
+
+首先，把下面的源码用Hello.hx这个文件名保存到一个单独的目录里：
+\input{codes/Hello.hx}
+之所以说它是万能的Hello world，不仅仅是因为其他书里也有这个，也是因为，这个东西几乎可以编译为haXe的任何目标！ 
+
+下面是编译文件，保存到和上面的文件同一目录下，命名为Build.hxml：
+
+\noindent
+\ttfamily
+\hlstd{}\hlline{\ \ \ \ 1\ }\hlslc{\#生成neko}\\
+\hlline{\ \ \ \ 2\ }\hlstd{}\hlkwa{{-}neko\ }\hlstd{neko/hello.n}\\
+\hlline{\ \ \ \ 3\ }\hlkwc{{-}main\ }\hlstd{Hello}\\
+\hlline{\ \ \ \ 4\ }\\
+\hlline{\ \ \ \ 5\ }\hlslc{\#生成php}\\
+\hlline{\ \ \ \ 6\ }\hlstd{}\hlkwb{{-}{-}next\ }\\
+\hlline{\ \ \ \ 7\ }\hlstd{}\hlkwa{{-}php\ }\hlstd{php}\\
+\hlline{\ \ \ \ 8\ }\hlkwc{{-}main\ }\hlstd{Hello}\\
+\hlline{\ \ \ \ 9\ }\\
+\hlline{\ \ \ 10\ }\hlslc{\#生成javascript}\\
+\hlline{\ \ \ 11\ }\hlstd{}\hlkwb{{-}{-}next\ }\\
+\hlline{\ \ \ 12\ }\hlstd{}\hlkwa{{-}js\ }\hlstd{js/hello.js}\\
+\hlline{\ \ \ 13\ }\hlkwc{{-}main\ }\hlstd{Hello}\\
+\hlline{\ \ \ 14\ }\\
+\hlline{\ \ \ 15\ }\hlslc{\#生成swf}\\
+\hlline{\ \ \ 16\ }\hlstd{}\hlkwb{{-}{-}next\ }\\
+\hlline{\ \ \ 17\ }\hlstd{}\hlkwa{{-}swf\ }\hlstd{swf/hello.swf}\\
+\hlline{\ \ \ 18\ }\hlkwb{{-}swf{-}version\ }\hlstd{}\hlnum{9}\\
+\hlline{\ \ \ 19\ }\hlstd{}\hlkwb{{-}swf{-}header\ }\hlstd{}\hlnum{600:400:30:FF0000}\\
+\hlline{\ \ \ 20\ }\hlstd{}\hlkwc{{-}main\ }\hlstd{Hello}\\
+\mbox{}
+\normalfont
+
+上面的文件并没有编译以下两种格式：swf8和C++，但如果愿意，也可以编译出来的。swf8即AS 2程序没有编译是因为个人觉得已经没有什么必要，AS 2相对简单，开发也快捷的多，还不如直接学习使用AS 2来的方便。而C++没有编译则是因为必须安装C++编译器，windows下必须是VC，或者采用免费的VC express版，而且还可能会出现很多问题，必须把环境变量配置好了才能使用（其实原因是VC的命令行编译工具所依赖的一大堆库并没有配置环境变量，所 以运行时找不到）。Linux下则需要安装gcc和相关的包（ubuntu下比较简单,直接sudo apt-get install build-essential安装完毕即可）。至于MAC，需要什么我并不清楚，因为我不用MAC。 
+
+如果你的条件具备，可以把以下代码添加到上面的build.hxml文件末尾，用于输出C++。
+
+\noindent
+\ttfamily
+\hlline{\ \ \ 21\ }\hlslc{\#\ 生成\ cpp}\\
+\hlline{\ \ \ 22\ }\hlstd{}\hlkwb{{-}{-}next\ }\\
+\hlline{\ \ \ 23\ }\hlkwa{{-}cpp\ }\hlstd{cpp}\\
+\hlline{\ \ \ 24\ }\hlkwc{{-}main\ }\hlstd{Hello}\\
+\mbox{}
+\normalfont
+
+将这两个文件全都保存好后。打开命令行窗口（在windows下就是DOS窗口，点开始-运行，然后输入cmd出来的那个），切换到你保存上面源码的目录，输 入： \verb|haxe build.hxml| ，然后回车，就可以编译出一大堆的目录和文件了。在windows下也可以直接双击build.hxml文件编译。 
+
+编译结果应该是下面的情况： 
+
+\begin{enumerate}
+\item neko目录下有一个hello.n文件，在命令行窗口中进入这个目录，执行 neko hello.n 命令，就能看到运行结果 Hello.hx: 12 : Hello world! 
+\item php目录下会有一个index.php文件和一个lib目录，把它们拷贝到apache或者lighthttpd的虚拟目录下，在浏览器中打开 http://localhost/ 就能看到输出结果。 
+\item js目录下会有一个hello.js文件，把下面的代码保存到这个目录中，双击打开它就能看到结果。 
+
+\noindent
+\ttfamily
+\hlstd{}\hlline{\ \ \ \ 1\ }\hlkwa{$<$html$>$}\\
+\hlline{\ \ \ \ 2\ }\hlstd{}\hlkwa{$<$head$>$$<$title$>$}\hlstd{haXe\ JS}\hlkwa{$<$/title$>$$<$/head$>$}\\
+\hlline{\ \ \ \ 3\ }\hlstd{}\hlkwa{$<$body$>$}\\
+\hlline{\ \ \ \ 4\ }\hlstd{}\\
+\hlline{\ \ \ \ 5\ }\hlkwa{$<$div\ }\hlstd{}\hlkwb{id}\hlstd{=}\hlstr{"haxe:trace"}\hlstd{}\hlkwa{$>$$<$/div$>$}\\
+\hlline{\ \ \ \ 6\ }\hlstd{}\hlkwa{$<$script\ }\hlstd{}\hlkwb{type}\hlstd{=}\hlstr{"text/javascript"}\hlstd{}\hlstd{\ \ }\hlstd{}\hlkwb{src}\hlstd{=}\hlstr{"hello.js"}\hlstd{}\hlkwa{$>$}\\
+\hlline{\ \ \ \ 7\ }\hlstd{}\hlkwa{$<$/script$>$}\\
+\hlline{\ \ \ \ 8\ }\hlstd{}\\
+\hlline{\ \ \ \ 9\ }\hlkwa{$<$/body$>$}\\
+\hlline{\ \ \ 10\ }\hlstd{}\hlkwa{$<$/html$>$}\hlstd{}\\
+\mbox{}
+\normalfont
+\item swf目录下会有一个hello.swf文件，用flashplayer打开它，就能看到运行结果。
+\item 如果你配置了C++编译器，并且正确编译好后，应该能再cpp目录下找到一个叫做Hello.exe(windows下)或者Hello(linux下) 的文件。windows下在命令行中进入这个目录执行Hello.exe就可以看到结果，Linux下在命令行下进入这个目录执行 ./Hello 即可。
+\end{enumerate}
+
+这个编译结果是不是很神奇？下面我们来分析一下这段神奇的代码：
+
+首先，我们先来看一下Hello.hx这个文件，它是这段程序的源码。在第一行，我们首先声明了这个程序在默认的根包中（有关包的概念我们会在后文中详细讲解），接下来，我们声明了一个叫做Hello的类，花括号中就是这个类的详细代码。接着，我们为这个类定义了一个带有static标识的方法main，表示它是一个静态方法，它是整个程序的唯一入口，在程序编译的时候会用到这个方法。main方法中，我们用一行代码让程序执行Hello类的构造函数，就是后面定义的new方法，于是程序的执行过程跳转到了new方法中，在new方法中，我们调用了一个系统函数trace，这个函数的功能是用来输出显示一些我们在程序执行过程中需要观察的信息。以方便我们确认程序的执行情况。在这里，它仅仅是输出了“Hello.hx: 12 : Hello world!”这样一段信息。整个程序就只是做了这些事情。
+
+接下来，我们来看一下，这段源码是怎么变成好几种在不同环境下执行的程序的。将程序源代码转换为执行代码的过程，我们称之为编译，而执行编译这个任务的程序，就被称作编译器。在之前我们执行的haxe build.hxml这个命令，就是调用haXe的编译器，并且把build.hxml做为参数，让编译器处理。在build.hxml文件中，一共有四个部分，第一部分让haXe编译器生成一个nekovm的字节码程序。位置是在neko目录中，名字叫hello.n。这个字节码程序可以被neko虚拟机打开执行。其余几部分分别是生成Flash、 PHP、Javascript程序代码的。其中的“--next”参数代表让haXe编译器另外再生成另一个程序，这样我们就可以在一个工程中一次性用一个命令生成多个不同的程序。其他的参数大同小异，只有最后第18行的-swf-version 9参数，它表示生成的swf文件版本为Flash player 9.0或更高版本的播放器使用。

@@ -1,0 +1,3 @@
+此部分为书中1.5节源码，带有C++编译目标，须配置编译器。Windows下需要VC，可以配置使用VC Express; Linux环境下需要安装GCC。
+
+This code is for the chapter 1.5, with CPP compiletion. It requires CPP compiler. For windows use Microsoft Visual C++ or Visual Studio Express. Under linux requires GCC(GNU C Compiler).

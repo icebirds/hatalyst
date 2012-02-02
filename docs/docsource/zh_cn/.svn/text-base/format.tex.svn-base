@@ -1,0 +1,41 @@
+\usepackage[xetex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{fontspec}
+\usepackage[perpage,hang]{footmisc}
+\setmainfont{Ubuntu}
+\usepackage[CJKnumber]{xeCJK}
+\setCJKmainfont{文泉驿微米黑}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{bookmark}
+\usepackage{listings}
+\usepackage{titlesec}
+\titleformat{\chapter}{\centering\huge}{第\CJKnumber{\thechapter}{}章}{1em}{\textbf}
+
+\usepackage{color}
+	\definecolor{gray}{rgb}{0.9,0.9,0.9}
+	
+\hypersetup{colorlinks=true}
+\graphicspath{{figure/}}
+\lstset{breaklines=ture,
+		extendedchars=false,
+		%numbers=left,
+		%numberstyle=\scriptsize,
+		frame=single,
+		fontadjust=false,
+		flexiblecolumns=true,
+		language=Java,
+		basicstyle=\ttfamily\small,
+ 		escapeinside=`'
+}
+
+\renewcommand\contentsname{目录}
+\renewcommand{\figurename}{图}
+\renewcommand{\chaptermark}[1]{\markboth{~第~\CJKnumber\thechapter~章~~~#1~}{}}
+% 修改脚注
+\renewcommand{\thefootnote}{\textcircled{\arabic{footnote}}}
+
+
+\usepackage{alltt}
+\usepackage[latin1]{inputenc}
+
+\input {highlight.sty}

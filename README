@@ -1,0 +1,72 @@
+==================== READ ME FIRST =========================
+Hatalyst ver 0.1
+
+
+=== CHANGE LOG: ===
+-------------------------------------
+Jan 3rd, 2011, First version released.
+======================== LICENSE ===========================
+/**
+Copyright (c) from 2010, Icebirds Team
+All rights reserved.
+
+Redistribution and use in source and binary forms,
+with or without modification, are permitted provided
+that the following conditions are met:
+
+    * Redistributions of source code must retain the
+      above copyright notice, this list of conditions
+      and the following disclaimer.
+    * Redistributions in binary form must reproduce
+      the above copyright notice, this list of
+      conditions and the following disclaimer in the
+      documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of the Icebirds Team nor the
+      names of its contributors may be used to endorse
+      or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+**/
+==============================================================
+
+The src folder is haXe source code with a simple sample(under app folder), and bin is the compile result.
+
+You can just use make command both under Windows and Linux to compile hatalyst :
+
+make (or make build): just compile and build a release version of the site , and trace will disable in the result.
+
+make debug : compile a site for test and debug .
+
+make clean : remove all compiled site file .
+
+If you want's to test the sample, you must change your /etc/hosts file, parse the zhhost domain to 127.0.0.1 . under windows, this file will be C:\Windows\System32\drivers\etc\hosts. Then config your apache to point the host directory to the bin folder or copy the content in bin folder to the host directory. Then open http://localhost in your browser you can see the result.
+
+Document will comming soon.
+
+src目錄中是haXe源碼，包含一個簡單的例子（在src/app目錄下），bin目錄則是編譯結果。
+
+在Windows下和Linux下都可以使用make命令编译框架：
+
+make(或 make build): 编译发布版本，在编译结果中，程序中的trace语句将会失效。
+
+make debug: 编译调试版本，trace语句也可以使用。
+
+make clean: 清除编译结果。
+
+如果想要測試例子，你必須修改/etc/hosts（Windows下爲C:\Windows\System32\etc\hosts）檔案，將zhhost解析爲127.0.0.1。再修改apache的配置，將網站目錄指向bin目錄，或將bin目錄中的內容拷貝到網站目錄中。最後在瀏覽器中打開http://localhost就能看到結果了。
+
+文檔將很快加入。

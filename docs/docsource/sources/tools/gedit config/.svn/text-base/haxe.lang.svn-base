@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ Author: Ian Liu Rodrigues <ian.liu88@gmail.com> (modified from java.xml)
+ Copyright (C) 2003 Gustavo Giráldez <gustavo.giraldez@gmx.net>
+ Copyright (C) 2006 Jeff Walden <jwalden@mit.edu>
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ Boston, MA 02111-1307, USA.
+
+-->
+<language id="hx" _name="Haxe" version="2.0" _section="Sources">
+  <metadata>
+    <property name="mimetypes">text/x-haxe</property>
+    <property name="globs">*.hx</property>
+    <property name="line-comment-start">//</property>
+    <property name="block-comment-start">/*</property>
+    <property name="block-comment-end">*/</property>
+  </metadata>
+
+  <styles>
+    <style id="comment" _name="Comment" map-to="def:comment"/>
+    <style id="error" _name="Error" map-to="def:error"/>
+    <style id="string" _name="String" map-to="def:string"/>
+    <style id="external" _name="External" map-to="def:preprocessor"/>
+    <style id="declaration" _name="Declaration" map-to="def:type"/>
+    <style id="storage-class" _name="Storage Class" map-to="def:type"/>
+    <style id="scope-declaration" _name="Scope Declaration" map-to="def:type"/>
+    <style id="keyword" _name="Keyword" map-to="def:keyword"/>
+    <style id="null-value" _name="Null Value" map-to="def:special-constant"/>
+    <style id="boolean" _name="Boolean value" map-to="def:boolean"/>
+    <style id="number" _name="Number" map-to="def:decimal"/>
+    <style id="type" _name="Data Type" map-to="def:identifier"/>
+	<!-- <style id="constant" _name="Constant" map-to="def:constant"/> -->
+    <style id="escaped-char" _name="Escaped Character"  map-to="def:special-char"/>
+  </styles>
+
+  <definitions>
+	
+	<!--<context id="constant" style-ref="constant">
+		<match>[_A-Z][_A-Z0-9]*</match>
+	</context>-->
+
+    <define-regex id="escaped-char" extended="true">
+	  \\(x?\d+|[\\\?\"\'nt])
+	</define-regex>
+
+    <define-regex id="escaped-char-error" extended="true">
+	  \\[^\\\?\"\'ntx\d]
+	</define-regex>
+
+	<context id="escaped-char" style-ref="escaped-char">
+	  <match>\%{escaped-char}</match>
+	</context>
+
+	<context id="escaped-char-error" style-ref="error">
+	  <match>\%{escaped-char-error}</match>
+	</context>
+
+    <context id="string" style-ref="string">
+      <start>"</start>
+      <end>"</end>
+	  <include>
+	    <context ref="escaped-char"/>
+	    <context ref="escaped-char-error"/>
+	  </include>
+    </context>
+
+    <context id="string-2" style-ref="string">
+      <start>'</start>
+      <end>'</end>
+	  <include>
+	    <context ref="escaped-char"/>
+	    <context ref="escaped-char-error"/>
+	  </include>
+    </context>
+
+    <context id="line-comment" style-ref="comment" end-at-line-end="true">
+      <start>//</start>
+      <include>
+        <context ref="def:in-line-comment"/>
+      </include>
+    </context>
+
+    <context id="block-comment" style-ref="comment">
+      <start>/\*</start>
+      <end>\*/</end>
+      <include>
+        <context ref="def:in-comment"/>
+      </include>
+    </context>
+
+    <context id="close-comment-outside-comment" style-ref="error">
+      <match>\*/(?!\*)</match>
+    </context>
+
+    <context id="externals" style-ref="external">
+      <keyword>import</keyword>
+      <keyword>package</keyword>
+    </context>
+
+    <define-regex id="preproc-start" extended="true">^\s*#\s*</define-regex>
+
+    <context id="preo-proc" style-ref="external">
+      <match extended="true">\%{preproc-start}if\b</match>
+    </context>
+
+    <context id="declarations" style-ref="declaration">
+      <keyword>class</keyword>
+      <keyword>enum</keyword>
+      <keyword>extends</keyword>
+      <keyword>function</keyword>
+      <keyword>implements</keyword>
+      <keyword>interface</keyword>
+      <keyword>typedef</keyword>
+      <keyword>var</keyword>
+    </context>
+
+    <context id="primitive-types" style-ref="type">
+	  <match>\b[A-Z][a-zA-Z0-9]*\b</match>
+	  <!--<keyword>Array</keyword>
+      <keyword>ArrayAccess</keyword>
+      <keyword>Bool</keyword>
+      <keyword>Class</keyword>
+      <keyword>Date</keyword>
+      <keyword>DateTools</keyword>
+      <keyword>Dynamic</keyword>
+      <keyword>EReg</keyword>
+      <keyword>Enum</keyword>
+      <keyword>Float</keyword>
+      <keyword>Hash</keyword>
+      <keyword>Int</keyword>
+      <keyword>IntHash</keyword>
+      <keyword>IntIter</keyword>
+      <keyword>Iterable</keyword>
+      <keyword>Iterator</keyword>
+      <keyword>Lambda</keyword>
+      <keyword>List</keyword>
+      <keyword>Math</keyword>
+      <keyword>Null</keyword>
+      <keyword>Reflect</keyword>
+      <keyword>Std</keyword>
+      <keyword>String</keyword>
+      <keyword>StringBuf</keyword>
+      <keyword>StringTools</keyword>
+      <keyword>Type</keyword>
+      <keyword>UInt</keyword>
+      <keyword>ValueType</keyword>
+      <keyword>Void</keyword>
+      <keyword>Xml</keyword>
+	  <keyword>XmlType</keyword>-->
+    </context>
+
+    <context id="storage-class" style-ref="storage-class">
+      <keyword>static</keyword>
+      <keyword>inline</keyword>
+    </context>
+
+    <context id="scope-declarations" style-ref="scope-declaration">
+      <keyword>private</keyword>
+      <keyword>public</keyword>
+      <keyword>dynamic</keyword>
+      <keyword>override</keyword>
+    </context>
+
+    <context id="flow" style-ref="keyword">
+      <keyword>break</keyword>
+      <keyword>case</keyword>
+      <keyword>cast</keyword>
+      <keyword>catch</keyword>
+      <keyword>continue</keyword>
+      <keyword>default</keyword>
+      <keyword>do</keyword>
+      <keyword>else</keyword>
+      <keyword>for</keyword>
+      <keyword>if</keyword>
+      <keyword>in</keyword>
+      <keyword>return</keyword>
+      <keyword>switch</keyword>
+      <keyword>throw</keyword>
+      <keyword>try</keyword>
+      <keyword>untyped</keyword>
+      <keyword>while</keyword>
+    </context>
+
+    <context id="memory" style-ref="keyword">
+      <keyword>new</keyword>
+      <keyword>super</keyword>
+      <keyword>this</keyword>
+    </context>
+
+    <context id="null-value" style-ref="null-value">
+      <keyword>null</keyword>
+    </context>
+
+    <context id="boolean" style-ref="boolean">
+      <keyword>false</keyword>
+      <keyword>true</keyword>
+    </context>
+
+    <context id="numeric" style-ref="number">
+      <match extended="true">
+        (\b([0-9]+|0[xX][0-9a-fA-F]+)[Ll]?\b|
+         \b(([0-9]+[Ee][-]?[0-9]+|
+            ([0-9]*\.[0-9]+|[0-9]+\.)([Ee][-]?[0-9]+)?)[fFdD]?|
+            [0-9]+[FfDd]))
+      </match>
+    </context>
+
+    <context id="hx">
+      <include>
+        <context ref="string"/>
+        <context ref="string-2"/>
+        <context ref="line-comment"/>
+        <context ref="block-comment"/>
+        <context ref="close-comment-outside-comment"/>
+        <context ref="externals"/>
+        <context ref="declarations"/>
+        <context ref="primitive-types"/>
+        <context ref="storage-class"/>
+        <context ref="scope-declarations"/>
+        <context ref="flow"/>
+        <context ref="memory"/>
+        <context ref="null-value"/>
+        <context ref="boolean"/>
+        <context ref="numeric"/>
+		<!-- <context ref="constant"/> -->
+      </include>
+    </context>
+
+  </definitions>
+</language>

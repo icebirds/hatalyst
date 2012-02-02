@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="utf-8">
+
+<head>
+	<meta http-equiv="Content-type" content="site/index.htmltext/html; charset=utf-8" />
+	<title>Hatalyst, haxe開發的Web框架</title>
+	<meta name="description" content="Hatalyst 範例." />
+	<meta name="keyword" content="Web, framework" />
+</head>
+
+<body>
+
+<div id="wraper">
+	<h1>Hytalyst</h1>
+	<h2>導航</h2>
+	<ul>
+		<li><a href="/">首頁</a></li>
+		<li><a href="/index.php/paramsample/1.html">參數範例1</a></li>
+		<li><a href="/index.php/paramsample/2/moreparam.html">參數範例2</a></li>
+		<li><a href="/index.php/this/will/got/a/error.html">出錯範例</li>
+		<li><a href="/index.php/license.html">許可證</a></li>
+		<li><a href="http://localhost">English</a></li>
+	</ul>
+	<h2>參數範例</h2>
+	<p>::content::</p>
+</div>
+
+</body>
+
+</html>

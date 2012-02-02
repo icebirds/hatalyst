@@ -1,0 +1,25 @@
+#生成neko
+-neko neko/hello.n
+-main Hello
+
+#生成php
+--next
+-php php
+-main Hello
+
+#生成javascript
+--next
+-js js/hello.js
+-main Hello
+
+#生成swf
+--next
+-swf swf/hello.swf
+-swf-version 9
+-main Hello
+-debug
+
+#生成cpp
+--next
+-cpp cpp
+-main Hello

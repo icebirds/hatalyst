@@ -1,0 +1,7 @@
+==== ver 0.1.2 ====
+* Change build scripts to Makefile and make.bat for MS Windows .
+* Make error directory and templates directory user definable .
+
+==== ver 0.1 ====
+* Build basic framework .
+* Make a simple sample .

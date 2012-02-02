@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="utf-8">
+
+<head>
+	<meta http-equiv="Content-type" content="site/index.htmltext/html; charset=utf-8" />
+	<title>Hatalyst, haxe開發的Web框架</title>
+	<meta name="description" content="Hatalyst 範例." />
+	<meta name="keyword" content="Web, framework" />
+</head>
+
+<body>
+
+<div id="wraper">
+	<h1>Hytalyst</h1>
+	<h2>導航</h2>
+	<ul>
+		<li><a href="/">首頁</a></li>
+		<li><a href="/index.php/paramsample/1.html">參數範例1</a></li>
+		<li><a href="/index.php/paramsample/2/moreparam.html">參數範例2</a></li>
+		<li><a href="/index.php/this/will/got/a/error.html">出錯範例</li>
+		<li><a href="/index.php/license.html">許可證</a></li>
+		<li><a href="http://enhost">English</a></li>
+	</ul>
+	<h2>簡介</h2>
+	<p>Hatalyst是一款haXe開發的web框架。具有以下特性：</p>
+	<ol>
+		<li>多目標發佈，可發佈爲PHP或neko兩種版本。</li>
+		<li>多站點支持，可爲指向到同一目錄的不同域名指定不同的解析方式。</li>
+		<li>自由靈活的URI定義支持。</li>
+		<li>簡單方便快捷的模板（採用haXe內置的模板處理）。</li>
+		<li>通過多站點支持和URI定義處理，可以自由靈活地進行多語言網站的部署。</li>
+		<li>跨平臺，可在Windows、MAC或Linux下開發。同樣亦可部署於上述任何平臺之上。</li>
+	</ol>
+
+</div>
+
+</body>
+
+</html>

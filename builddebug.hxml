@@ -1,0 +1,4 @@
+-php bin
+-cp src
+-main Main
+-debug

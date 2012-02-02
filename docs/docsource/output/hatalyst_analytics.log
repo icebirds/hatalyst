@@ -1,0 +1,596 @@
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2012.2.1)  1 FEB 2012 21:34
+entering extended mode
+ %&-line parsing enabled.
+**hatalyst_analytics.tex
+(./hatalyst_analytics.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk11.clo
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./format.tex
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen105
+\WF@size=\dimen106
+\c@WF@wrappedlines=\count89
+\WF@box=\box26
+\WF@everypar=\toks15
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-texlive/tex/xelatex/fontspec/fontspec.sty
+Package: fontspec 2008/08/09 v1.18 Advanced font selection for XeLaTeX
+
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+\c@zf@newff=\count90
+\c@zf@index=\count91
+\c@zf@script=\count92
+\c@zf@language=\count93
+
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count94
+\calc@Bcount=\count95
+\calc@Adimen=\dimen107
+\calc@Bdimen=\dimen108
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count96
+\calc@Cskip=\skip45
+)
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+\XKV@depth=\count97
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/xelatex/euenc/eu1enc.def
+File: eu1enc.def 2008/03/08 v0.1d Experimental unicode font encoding
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
+
+
+(/usr/share/texmf-texlive/tex/xelatex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+))
+LaTeX Info: Redefining \itshape on input line 1163.
+LaTeX Info: Redefining \slshape on input line 1166.
+LaTeX Info: Redefining \scshape on input line 1169.
+LaTeX Info: Redefining \upshape on input line 1172.
+
+fontspec.cfg loaded.
+(/usr/share/texmf-texlive/tex/xelatex/fontspec/fontspec.cfg))
+(/usr/share/texmf-texlive/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2009/09/15 v5.5a a miscellany of footnote facilities
+\FN@temptoken=\toks18
+\footnotemargin=\dimen109
+\c@pp@next@reset=\count98
+\c@@fnserial=\count99
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\c@zf@famc@Ubuntu=\count100
+Package fontspec Info: Defining font family for 'Ubuntu' with options [] on inp
+ut line 5.
+
+(/usr/share/texmf-texlive/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2009/09/30 2.3.10
+\xeCJK@cnta=\count101
+\xeCJK@cntb=\count102
+\xeCJK@cntc=\count103
+\xeCJK@cntd=\count104
+\xeCJK@cnte=\count105
+\xeCJK@dima=\dimen110
+LaTeX Info: Redefining \rmfamily on input line 762.
+LaTeX Info: Redefining \sffamily on input line 766.
+LaTeX Info: Redefining \ttfamily on input line 770.
+\xeCJK@featureadded=\count106
+
+(/usr/share/texmf/tex/latex/CJK/CJKnumb.sty
+Package: CJKnumb 2008/12/29 4.8.2
+\CJK@q=\count107
+\CJK@r=\count108
+))
+\c@zf@famc@文泉驿微米黑=\count109
+Package fontspec Info: Defining font family for '文泉驿微米黑'with option
+s [] on input line 7.
+Package fontspec Info: Could not resolve font 文泉驿微米黑/B (it might no
+t exist) on input line 7.
+Package fontspec Info: Could not resolve font 文泉驿微米黑/I (it might no
+t exist) on input line 7.
+Package fontspec Info: Could not resolve font 文泉驿微米黑/BI (it might n
+ot exist) on input line 7.
+LaTeX Info: Redefining \xeCJK@font@rm on input line 7.
+
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count110
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2009/08/13 v1.5 PDF bookmarks (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdfescape.sty
+Package: pdfescape 2007/11/11 v1.8 Provides hex, PDF name and string conversion
+s (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+))
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen111
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/hyperref.cfg
+File: hyperref.cfg 2008/07/11 v1.2 hyperref configuration for XeLaTeX
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+))
+\Fld@menulength=\count113
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
+\Field@toks=\toks19
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
+)
+*hyperref using default driver hdvipdfm*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvipdfm.def
+File: hdvipdfm.def 2009/10/09 v6.79a Hyperref driver for dvipdfm
+\pdfm@box=\box27
+\c@Hy@AnnotLevel=\count117
+\HyField@AnnotCount=\count118
+\Fld@listcount=\count119
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2007/04/06 v1.1 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2009/08/13 v1.5 bookmark driver for dvipdfm (HO)
+\BKM@id=\count120
+))
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count121
+\lst@gtempboxa=\box28
+\lst@token=\toks20
+\lst@length=\count122
+\lst@currlwidth=\dimen114
+\lst@column=\count123
+\lst@pos=\count124
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count125
+\lst@lineno=\count126
+\lst@maxwidth=\dimen117
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count127
+\lst@skipnumbers=\count128
+\lst@framebox=\box29
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box30
+\beforetitleunit=\skip48
+\aftertitleunit=\skip49
+\ttl@plus=\dimen118
+\ttl@minus=\dimen119
+\ttl@toksa=\toks21
+\titlewidth=\dimen120
+\titlewidthlast=\dimen121
+\titlewidthfirst=\dimen122
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 130.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+)) (./highlight.sty))
+(/home/icebird/projects/webframework/release/docs/docsource/output/hatalyst_ana
+lytics.aux)
+\openout1 = `hatalyst_analytics.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid this).
+ on input line 9.
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 9.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 9.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 9.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 9.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 9.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 9.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 9.
+LaTeX Font Info:    Redeclaring math accent \check on input line 9.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 9.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 9.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 9.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 9.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/Ubuntu(0)/m/n on input line 9.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/Ubuntu(0)/m/n on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/Ubuntu(0)/m/n --> EU1/Ubuntu(0)/m/n on input line 9
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  EU1/Ubuntu(0)/m/n --> EU1/Ubuntu(0)/m/n on input line 9
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/Ubuntu(0)/m/it on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/Ubuntu(0)/bx/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/Ubuntu(0)/m/n --> EU1/Ubuntu(0)/bx/n on input line 
+9.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU1/Ubuntu(0)/m/n --> EU1/Ubuntu(0)/bx/n on input line 
+9.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/Ubuntu(0)/bx/it on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 9.
+Package hyperref Info: Link coloring ON on input line 9.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count129
+)
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+\AtBeginShipoutBox=\box31
+\c@lstlisting=\count130
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+Ubuntu(0) on input lin
+e 12.
+LaTeX Font Info:    No file OMSUbuntu(0).fd. on input line 12.
+LaTeX Font Info:    Font shape `OMS/Ubuntu(0)/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+ [1
+
+
+] (./prologue.tex
+LaTeX Font Info:    Font shape `EU1/文泉驿微米黑(0)/bx/n' undefined
+(Font)              using `EU1/文泉驿微米黑(0)/m/n' instead on input line
+ 1.
+[2])
+(/home/icebird/projects/webframework/release/docs/docsource/output/hatalyst_ana
+lytics.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 1.
+ [3
+
+])
+\tf@toc=\write3
+\openout3 = `hatalyst_analytics.toc'.
+
+ [4] (./part1/part1.tex [1
+
+] [2] (./part1/chapter1.tex
+Chapter 1.
+(./part1/section1_1.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 3.
+ [3
+
+]) (./part1/section1_2.tex) (./part1/section1_3.tex
+LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/sl' in size <10.95> not availab
+le
+(Font)              Font shape `EU1/Ubuntu(0)/m/it' tried instead on input line
+ 9.
+LaTeX Font Info:    Font shape `EU1/文泉驿微米黑(0)/m/sl' undefined
+(Font)              using `EU1/文泉驿微米黑(0)/m/n' instead on input line
+ 9.
+
+[4]) (./part1/section1_4.tex
+
+Package xeCJK Warning: Unknown CJK family `tt' is ignored.
+Use \setCJKfamilyfont to define a CJK family. on input line 7.
+
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 7.
+(/usr/share/texmf-texlive/tex/xelatex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 8.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [5]
+Underfull \hbox (badness 1571) in paragraph at lines 12--12
+\rm/m/n/9 默 认 的 库 目 录 变 成 了 \EU1/Ubuntu(0)/m/n/9 C:\OMS/Ubunt
+u(0)/m/n/9 n\EU1/Ubuntu(0)/m/n/9 Motion-Twin\OMS/Ubuntu(0)/m/n/9 n\EU1/Ubuntu(0
+)/m/n/9 haxe\OMS/Ubuntu(0)/m/n/9 n\EU1/Ubuntu(0)/m/n/9 lib\rm/m/n/9 ，| 关 �
+� 此 改 动 的 详 情 请 参 见
+ []
+
+) (./part1/section1_5.tex [6]
+File: images/0001.png Graphic file (type QTm)
+ <use  "images/0001.png" >
+Underfull \hbox (badness 1394) in paragraph at lines 27--28
+[]\rm/m/sl/10.95 接 下 来 切 换 到 |“字 体 和 颜
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 27--28
+\rm/m/sl/10.95 色”| 选 项 卡，| 配 色 方 案 选 择
+ []
+
+)) (./part1/chapter2.tex [7] [8
+
+]
+Chapter 2.
+(./part1/section2_1.tex (./codes/Hello.hx.tex
+LaTeX Font Info:    Try loading font information for OMS+lmtt on input line 6.
+LaTeX Font Info:    No file OMSlmtt.fd. on input line 6.
+LaTeX Font Info:    Font shape `OMS/lmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 6.
+LaTeX Font Info:    Font shape `EU1/文泉驿微米黑(0)/m/it' undefined
+(Font)              using `EU1/文泉驿微米黑(0)/m/n' instead on input line
+ 12.
+)
+Overfull \hbox (3.63173pt too wide) in paragraph at lines 9--10
+[]\rm/m/it/10.95 下 面 是 编 译 文 件，| 保 存 到 和 上 面 的 �
+� 件 同 一 目 录 下，| 命 名 为 \EU1/Ubuntu(0)/m/n/10.95 Build.hxml\r
+m/m/it/10.95 ：| 
+ []
+
+
+Underfull \vbox (badness 1874) has occurred while \output is active []
+
+ [9]
+[10]
+Overfull \hbox (21.89171pt too wide) in paragraph at lines 55--56
+\EU1/Ubuntu(0)/m/n/10.95 apache \rm/m/it/10.95 或 者 \EU1/Ubuntu(0)/m/n/10.95
+ lighthttpd \rm/m/it/10.95 的 虚 拟 目 录 下，| 在 浏 览 器 中 打 
+开 \EU1/Ubuntu(0)/m/n/10.95 http://localhost/
+ []
+
+[11]) (./part1/section2_2.tex)) (./part1/chapter3.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13] [14
+
+]
+Chapter 3.
+) [15]) (./part2/part2.tex [16
+
+] [17] [18] (./part2/chapter4.tex
+Chapter 4.
+(./part2/section4_1.tex) (./part2/section4_2.tex) (./part2/section4_3.tex)
+(./part2/section4_4.tex) (./part2/section4_5.tex) (./part2/section4_6.tex)))
+[19
+
+]
+(/home/icebird/projects/webframework/release/docs/docsource/output/hatalyst_ana
+lytics.aux)
+LaTeX Font Info:    Some font shapes were not available, defaults substituted.
+ ) 
+Here is how much of TeX's memory you used:
+ 8932 strings out of 495713
+ 143302 string characters out of 1188884
+ 284898 words of memory out of 3000000
+ 11813 multiletter control sequences out of 15000+50000
+ 8779 words of font info for 63 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 39i,15n,72p,638b,999s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on /home/icebird/projects/webframework/release/docs/docsource/ou
+tput/hatalyst_analytics.pdf (23 pages).
